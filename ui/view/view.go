@@ -43,5 +43,7 @@ func New(tpl *template.Engine, r *http.Request, sess *session.Session) *View {
 	b.params["theme_checksum"] = static.StylesheetsChecksums[theme]
 	b.params["app_js_checksum"] = static.JavascriptsChecksums["app"]
 	b.params["sw_js_checksum"] = static.JavascriptsChecksums["service-worker"]
+	b.params["plyr_js_checksum"] = static.JavascriptsChecksums["plyr"]
+	b.params["plyr_css_checksum"] = static.StylesheetsChecksums["plyr"]
 	return b
 }

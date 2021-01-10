@@ -356,6 +356,11 @@ SOFTWARE.
     <link rel="stylesheet" type="text/css" href="{{ route "stylesheet" "name" "custom_css" }}">
     {{ end }}
 
+    <!-- Plyr CSS and JS -->
+    <link rel="stylesheet" type="text/css" href="{{ route "stylesheet" "name" "plyr" }}?{{ .plyr_css_checksum }}">
+    <script type="text/javascript" src="{{ route "javascript" "name" "plyr" }}?{{ .plyr_js_checksum }}"></script>
+
+
     <script type="text/javascript" src="{{ route "javascript" "name" "app" }}?{{ .app_js_checksum }}" defer></script>
     <script type="text/javascript" src="{{ route "javascript" "name" "service-worker" }}?{{ .sw_js_checksum }}" defer id="service-worker-script"></script>
 </head>
@@ -542,7 +547,7 @@ var templateCommonMapChecksums = map[string]string{
 	"feed_menu":        "318d8662dda5ca9dfc75b909c8461e79c86fb5082df1428f67aaf856f19f4b50",
 	"icons":            "7161afa4cce46245a99cb1e49a605d3ff30e907c3f568ef9c17218718d20e042",
 	"item_meta":        "fefa219c8296f0370632336ed59a2c8b0c2146ee77f3b10de1d9b87982219dc5",
-	"layout":           "03c77ed0163b790c0622ecec173119537087c66f6a3925a931ae83a9a94d32cf",
+	"layout":           "deb9d677a15a91aa7191674517eec3f1f145d9018961df2d0e5aea540a487cfb",
 	"pagination":       "7b61288e86283c4cf0dc83bcbf8bf1c00c7cb29e60201c8c0b633b2450d2911f",
 	"settings_menu":    "e2b777630c0efdbc529800303c01d6744ed3af80ec505ac5a5b3f99c9b989156",
 }

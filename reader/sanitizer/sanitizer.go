@@ -391,6 +391,7 @@ func getTagAllowList() map[string][]string {
 	whitelist["rtc"] = []string{}
 	whitelist["ruby"] = []string{}
 	whitelist["iframe"] = []string{"width", "height", "frameborder", "src", "allowfullscreen"}
+	whitelist["div"] = []string{"class", "id"}
 	return whitelist
 }
 

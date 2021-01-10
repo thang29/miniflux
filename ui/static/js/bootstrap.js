@@ -73,6 +73,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+    // Initialize Plyr
+    const players = Array.from(document.querySelectorAll('#player, audio, video')).map(p => new Plyr(p));
+
     window.addEventListener('beforeinstallprompt', (e) => {
         // Prevent Chrome 67 and earlier from automatically showing the prompt.
         e.preventDefault();

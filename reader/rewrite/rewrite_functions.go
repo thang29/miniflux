@@ -182,7 +182,7 @@ func addYoutubeVideo(entryURL, entryContent string) string {
 	matches := youtubeRegex.FindStringSubmatch(entryURL)
 
 	if len(matches) == 2 {
-		video := `<iframe width="650" height="350" frameborder="0" src="https://www.youtube-nocookie.com/embed/` + matches[1] + `" allowfullscreen></iframe>`
+		video := `<div class="plyr__video-embed" id="player"><iframe width="650" height="350" frameborder="0" src="https://www.youtube-nocookie.com/embed/` + matches[1] + `" allowfullscreen></iframe></div>`
 		return video + `<br>` + entryContent
 	}
 	return entryContent
@@ -229,4 +229,3 @@ func replaceCustom(entryContent string, searchTerm string, replaceTerm string) s
 	}
 	return entryContent
 }
-

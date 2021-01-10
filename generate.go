@@ -194,6 +194,9 @@ func main() {
 			"ui/static/js/app.js",
 			"ui/static/js/bootstrap.js",
 		},
+		"plyr": []string{
+			"ui/static/js/plyr.js",
+		},
 		"service-worker": []string{
 			"ui/static/js/service_worker.js",
 		},
@@ -211,6 +214,7 @@ func main() {
 		"dark_sans_serif":   []string{"ui/static/css/dark.css", "ui/static/css/sans_serif.css", "ui/static/css/common.css"},
 		"system_serif":      []string{"ui/static/css/system.css", "ui/static/css/serif.css", "ui/static/css/common.css"},
 		"system_sans_serif": []string{"ui/static/css/system.css", "ui/static/css/sans_serif.css", "ui/static/css/common.css"},
+		"plyr":              []string{"ui/static/css/plyr.css"},
 	})
 
 	generateBinaryBundle("ui/static/bin.go", glob("ui/static/bin/*"))
